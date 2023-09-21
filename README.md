@@ -1,5 +1,9 @@
-# 2023.706 Data Enigineering. Mini project 2
-## Code description 
+# 2023.706 Data Enigineering. Project 1
+
+## Repo structure
+
+
+## Code description for py file
 In this project two functions are used to descirbe the data from a csv file:
 One function prints the descriptive statistcs using pandas describe():
 - mean 
