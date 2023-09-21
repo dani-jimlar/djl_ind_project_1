@@ -12,8 +12,29 @@ def print_ds_info(data):
     uses data.columns and describe() to print descriptive info of dataset
     """
     print("The variables in this data set are the following:",list(data.columns))
-    print("Data behaves as follows:\n", data.describe())
- 
+    print("The variables behave as follows:", data.describe())
+
+def print_mean(my_var):
+    print("The mean is",my_var.mean())
+
+def print_median(my_var):
+    print("The median is",my_var.median())
+
+def print_max(my_var):
+    print("The max is",my_var.max())
+
+def print_min(my_var):
+    print("The min is",my_var.min())
+
+def print_1_qt(my_var):
+    print("The first quantile is",my_var.quantile(0.25)())
+
+def print_3_qt(my_var):
+    print("The third quantile is",my_var.quantile(0.75)())
+
+
+
+
 def save_data_vis(data):
     """this fun generates a simple plot of the data set"""
     sns.barplot(data=data,  x="descrip",y="sexostt", ci=None)
@@ -41,4 +62,6 @@ if __name__ == "__main__":
     my_data = pd.read_csv("source/imp_edos_2.csv", encoding="ISO-8859-1")
     # Print dataset info
     print_ds_info(my_data)
+    selected=my_data.iloc[:,3]
     # generate graph
+    print_mean(selected)
