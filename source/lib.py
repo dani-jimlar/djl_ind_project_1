@@ -14,7 +14,7 @@ def print_ds_info(data):
     print("The variables in this data set are the following:",list(data.columns))
     print("Data behaves as follows:\n", data.describe())
  
-def data_vis(data):
+def save_data_vis(data):
     """this fun generates a simple plot of the data set"""
     sns.barplot(data=data,  x="descrip",y="sexostt", ci=None)
     plt.xlabel("Age group")
@@ -22,8 +22,17 @@ def data_vis(data):
     plt.title("Number of inmates by age group in Mexican prisons in 2021")
     locs, labels = plt.xticks()
     plt.setp(labels, rotation=90)
-    plt.savefig('bar_plot.png', dpi=300, bbox_inches='tight')
+    plt.savefig('source/bar_plot.png', dpi=300, bbox_inches='tight')
 
+def view_data_vis(data):
+    """this fun generates a simple plot of the data set"""
+    sns.barplot(data=data,  x="descrip",y="sexostt", ci=None)
+    plt.xlabel("Age group")
+    plt.ylabel("Number of inmmates")
+    plt.title("Number of inmates by age group in Mexican prisons in 2021")
+    locs, labels = plt.xticks()
+    plt.setp(labels, rotation=90)
+    plt.show()
 
 if __name__ == "__main__":
     #dir=os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'source'))
@@ -33,4 +42,3 @@ if __name__ == "__main__":
     # Print dataset info
     print_ds_info(my_data)
     # generate graph
-    data_vis(my_data)
