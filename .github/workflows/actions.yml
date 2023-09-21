@@ -19,12 +19,12 @@ jobs:
         run: make install
       - name: lint
         run: make lint
-      #- name: test
-      #  run: make test
       - name: format
         run: make format
       - name:  main
         run: make plot  
+      - name: Test with unittest and nbval
+        run: make test  
 
     
   

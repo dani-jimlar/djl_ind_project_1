@@ -7,4 +7,4 @@ pathlib==1.0.1
 seaborn
 matplotlib
 Pillow
-nbval
+nbval==0.10.0
