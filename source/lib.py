@@ -22,7 +22,7 @@ def save_data_vis(data):
     plt.title("Number of inmates by age group in Mexican prisons in 2021")
     locs, labels = plt.xticks()
     plt.setp(labels, rotation=90)
-    plt.savefig('source/bar_plot.png', dpi=300, bbox_inches='tight')
+    plt.savefig('source/bar_plot2.png', dpi=300, bbox_inches='tight')
 
 def view_data_vis(data):
     """this fun generates a simple plot of the data set"""
