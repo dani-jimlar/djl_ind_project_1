@@ -11,3 +11,4 @@ my_data = pd.read_csv("source/imp_edos_2.csv", encoding="ISO-8859-1")
 lib.print_ds_info(my_data)
 # generate graph
 lib.view_data_vis(my_data)
+print('hello')
