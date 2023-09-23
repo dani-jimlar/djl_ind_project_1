@@ -36,7 +36,7 @@ def print_3_qt(my_var):
 
 def save_data_vis(data):
     """this fun generates a simple plot of the data set"""
-    sns.barplot(data=data,  x="descrip",y="sexostt", ci=None)
+    sns.barplot(data=data,  x="descrip",y="sexostt", errorbar=None)
     plt.xlabel("Age group")
     plt.ylabel("Number of inmmates")
     plt.title("Number of inmates by age group in Mexican prisons in 2021")
@@ -46,7 +46,7 @@ def save_data_vis(data):
 
 def view_data_vis(data):
     """this fun generates a simple plot of the data set"""
-    sns.barplot(data=data,  x="descrip",y="sexostt", ci=None)
+    sns.barplot(data=data,  x="descrip",y="sexostt", errorbar=None)
     plt.xlabel("Age group")
     plt.ylabel("Number of inmmates")
     plt.title("Number of inmates by age group in Mexican prisons in 2021")
