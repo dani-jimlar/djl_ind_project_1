@@ -3,7 +3,6 @@ import pandas as pd
 import requests
 
 
-
 def test_print_min(selected):
     '''doc string'''
     #print(lib.print_min(selected))
