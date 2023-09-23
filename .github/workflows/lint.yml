@@ -15,5 +15,7 @@ jobs:
         with:
           python-version: 3.8
       - name: Ruff Linting
-        run: |
-          make lint
+      - name: install packages
+        run: make install
+      - name: lint
+        run: make lint
