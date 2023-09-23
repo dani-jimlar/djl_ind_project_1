@@ -13,14 +13,5 @@ save_data_vis(dt)
 #Print descriptive statistics of just one variable.
 selected=dt.iloc[:,3]
 
-print_mean(selected)
-
-print_median(selected)
-
-print_max(selected)
-
 print_min(selected)
 
-print_1_qt(selected)
-
-print_3_qt(selected)
