@@ -1,5 +1,5 @@
 #from source.lib import print_mean, print_median, print_min, print_max
-import lib
+from source import lib
 import pandas as pd
 
 def test_print_mean(selected):
@@ -22,12 +22,11 @@ def test_print_min(selected):
 if __name__ == "__main__":
     # Print dataset infoß
     #sel = pd.read_csv("source/imp_edos_2.csv", encoding="ISO-8859-1").iloc[:,3]
-    sel = pd.read_csv("imp_edos_2.csv", encoding="ISO-8859-1").iloc[:,3]
+    sel = pd.read_csv("source/imp_edos_2.csv", encoding="ISO-8859-1").iloc[:,3]
     #print(sel)
     test_print_mean(sel)
     #test_print_median(sel)
     #test_print_max(sel)
-
     #assert lib.print_min(sel) == "The min is 0"
 
     test_print_min(sel)

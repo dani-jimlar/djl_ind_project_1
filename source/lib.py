@@ -15,20 +15,19 @@ def print_ds_info(data):
     print("The variables behave as follows:", data.describe())
 
 def print_mean(my_var):
-    print("The mean is" + str(my_var.mean().round(2)))
-    return "The mean is" + str(my_var.mean().round(2))
+    return "The mean is " + str(my_var.mean().round(2))
 
 def print_median(my_var):
-    return "The median is" + str(my_var.median())
+    return "The median is " + str(my_var.median())
 
 def print_max(my_var):
-    return "The max is" + str(my_var.max())
+    return "The max is " + str(my_var.max())
 
 def print_1_qt(my_var):
-    print("The first quantile is",my_var.quantile(0.25)())
+    print("The first quantile is ",my_var.quantile(0.25)())
 
 def print_3_qt(my_var):
-    print("The third quantile is",my_var.quantile(0.75)())
+    print("The third quantile is ",my_var.quantile(0.75)())
 
 def print_min(my_var):
     return "The min is " + str(my_var.min().round(2))
