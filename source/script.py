@@ -1,5 +1,6 @@
 """
-This script uses functions from lib.py to generate a brief analysis of a dataset and save a data viszualization of the data
+This script uses functions from lib.py to generate a brief analysis of a
+dataset and save a data viszualization of the data
 """
 import pandas as pd 
 from source import lib 
