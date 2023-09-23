@@ -34,22 +34,15 @@ def print_3_qt(my_var):
     print("The third quantile is ",my_var.quantile(0.75)())
 
 
-def save_data_vis(data):
-    """this fun generates a simple plot of the data set"""
-    sns.barplot(data=data,  x="descrip",y="sexostt", errorbar=None)
-    plt.xlabel("Age group")
-    plt.ylabel("Number of inmmates")
-    plt.title("Number of inmates by age group in Mexican prisons in 2021")
-    locs, labels = plt.xticks()
-    plt.setp(labels, rotation=90)
-    plt.savefig('source/bar_plot2.png', dpi=300, bbox_inches='tight')
-
 def view_data_vis(data):
     """this fun generates a simple plot of the data set"""
-    sns.barplot(data=data,  x="descrip",y="sexostt", errorbar=None)
-    plt.xlabel("Age group")
-    plt.ylabel("Number of inmmates")
+    plt.figure(figsize=(10, 12))
+    plt.bar(data["descrip"], data["sexostt"])
     plt.title("Number of inmates by age group in Mexican prisons in 2021")
+    plt.xlabel("Age group")
+    plt.ylabel("Number of inmates")
+    plt.legend()
+    plt.tight_layout()
     locs, labels = plt.xticks()
     plt.setp(labels, rotation=90)
     plt.show()
