@@ -5,7 +5,7 @@ install:
 	python3 -m 	pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=source source/test_*.py
+	python -m pytest -vv --cov=source/test_*.py
 	python -m pytest --nbval source/*.ipynb
 
 format:	
