@@ -14,6 +14,10 @@ def print_ds_info(data):
     print("The variables in this data set are the following:",list(data.columns))
     print("The variables behave as follows:", data.describe())
 
+
+def print_min(my_var):
+    return "The min is " + str(my_var.min().round(2))
+
 def print_mean(my_var):
     return "The mean is " + str(my_var.mean().round(2))
 
@@ -29,8 +33,6 @@ def print_1_qt(my_var):
 def print_3_qt(my_var):
     print("The third quantile is ",my_var.quantile(0.75)())
 
-def print_min(my_var):
-    return "The min is " + str(my_var.min().round(2))
 
 def save_data_vis(data):
     """this fun generates a simple plot of the data set"""
