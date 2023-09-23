@@ -54,6 +54,19 @@ def view_data_vis(data):
     plt.setp(labels, rotation=90)
     plt.show()
 
+
+def safe_data_vis2(data):
+    plt.figure(figsize=(10, 12))
+    plt.bar(data["descrip"], data["sexostt"])
+    plt.title("Number of inmates by age group in Mexican prisons in 2021")
+    plt.xlabel("Age group")
+    plt.ylabel("Number of inmates")
+    plt.legend()
+    plt.tight_layout()
+    locs, labels = plt.xticks()
+    plt.setp(labels, rotation=90)
+    plt.savefig('source/bar_plot2.png', dpi=300, bbox_inches='tight')    
+
 if __name__ == "__main__":
     #dir=os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'source'))
     #sys.path.append(dir)
@@ -61,10 +74,11 @@ if __name__ == "__main__":
     my_data = pd.read_csv("source/imp_edos_2.csv", encoding="ISO-8859-1")
     # Print dataset info
     print_ds_info(my_data)
+    safe_data_vis2(my_data)
     selected=my_data.iloc[:,3]
     # generate graph
     print_mean(selected)
     print_median(selected)
     print_max(selected)
     print_min(selected)
-    save_data_vis(my_data)
+  
