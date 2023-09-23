@@ -9,7 +9,7 @@ dt= pd.read_csv("source/imp_edos_2.csv", encoding="ISO-8859-1")
 lib.print_ds_info(dt)
 # view and save graph
 lib.view_data_vis(dt)
-lib.save_data_vis(dt)
+lib.safe_data_vis2(dt)
 
 #Print descriptive statistics of just one variable.
 selected=dt.iloc[:,3]
