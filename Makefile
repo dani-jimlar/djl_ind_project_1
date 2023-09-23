@@ -12,7 +12,7 @@ format:
 	nbqa black source/*.ipynb
 
 lint:
-	nbqa ruff source/*.ipynb
+	nbqa ruff --fix source/*.ipynb
 	ruff check source/*.py
 
 refactor: format lint	
