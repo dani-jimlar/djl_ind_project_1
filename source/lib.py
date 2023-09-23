@@ -5,7 +5,7 @@ This fun prints descriptive analytics of a data set
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
- 
+
 def print_ds_info(data):
     """
     parameter:data
@@ -15,16 +15,14 @@ def print_ds_info(data):
     print("The variables behave as follows:", data.describe())
 
 def print_mean(my_var):
-    print("The mean is",my_var.mean())
+    print("The mean is" + str(my_var.mean().round(2)))
+    return "The mean is" + str(my_var.mean().round(2))
 
 def print_median(my_var):
-    print("The median is",my_var.median())
+    return "The median is" + str(my_var.median())
 
 def print_max(my_var):
-    print("The max is",my_var.max())
-
-def print_min(my_var):
-    print("The min is",my_var.min())
+    return "The max is" + str(my_var.max())
 
 def print_1_qt(my_var):
     print("The first quantile is",my_var.quantile(0.25)())
@@ -32,8 +30,8 @@ def print_1_qt(my_var):
 def print_3_qt(my_var):
     print("The third quantile is",my_var.quantile(0.75)())
 
-
-
+def print_min(my_var):
+    return "The min is " + str(my_var.min().round(2))
 
 def save_data_vis(data):
     """this fun generates a simple plot of the data set"""
@@ -65,3 +63,7 @@ if __name__ == "__main__":
     selected=my_data.iloc[:,3]
     # generate graph
     print_mean(selected)
+    print_median(selected)
+    print_max(selected)
+    print_min(selected)
+    save_data_vis(my_data)
