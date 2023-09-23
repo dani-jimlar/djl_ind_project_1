@@ -14,7 +14,6 @@ format:
 
 lint:
 	nbqa ruff --fix source/*.ipynb
-	ruff check source/*.py
 
 refactor: format lint	
 
