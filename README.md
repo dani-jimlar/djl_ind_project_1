@@ -8,7 +8,21 @@
 # 2023.706 Data Enigineering. Project 1
 
 ## Repo structure
-- git actions 
+- git actions/workflow (contains ymls called in Makefile)
+ 	- format.yml
+  - install.yml
+  - lint.yml
+  - test.yml
+- source (contains a scrpit and jupyter notebook that use functions from the lib.py file to perform data anayisis)
+  - bar_plot2.png
+  - imp_edos_2.csv
+  - lib.py
+  - my_notebook.ipnyb
+  - script.py
+  - test_lib.py
+  - test_script.py
+- 
+  
 
 ## Code description for py file
 In this project several functions are used to descirbe the data from a csv file.
