@@ -7,6 +7,9 @@
 
 # 2023.706 Data Enigineering. Project 1
 
+## Demo video
+- https://youtu.be/1nETtCDdkvU
+
 ## Repo structure
 - git actions/workflow 
  	- format.yml
