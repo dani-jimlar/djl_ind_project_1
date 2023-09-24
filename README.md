@@ -23,8 +23,8 @@
   - test_script.py
  - Makefile
  - requirements.txt
-## Code description for py file
-In this project several functions are used to descirbe the data from a csv file.
+## Code description for lib file
+In this project several functions are used to descirbe the data from a csv file and were defined in the lib.py file.
 One function prints the descriptive statistcs using pandas describe():
 - mean 
 - median
@@ -34,6 +34,9 @@ One function prints the descriptive statistcs using pandas describe():
 - first qt
 - second qt
 - third qt
+
+
 Two functions are used for data visualizations:
 Both functions make a barplot from a two selected variables using seaborn and matplotlib, one function saves it as a png image and the other just shows the image.
+
 
