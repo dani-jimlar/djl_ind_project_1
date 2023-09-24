@@ -8,7 +8,7 @@
 # 2023.706 Data Enigineering. Project 1
 
 ## Repo structure
-- git actions/workflow (contains ymls called in Makefile)
+- git actions/workflow 
  	- format.yml
   - install.yml
   - lint.yml
@@ -21,9 +21,8 @@
   - script.py
   - test_lib.py
   - test_script.py
-- 
-  
-
+ - Makefile
+ - requirements.txt
 ## Code description for py file
 In this project several functions are used to descirbe the data from a csv file.
 One function prints the descriptive statistcs using pandas describe():
